@@ -1,0 +1,25 @@
+:root{
+    --color-0: #d9d7e44f;
+    --color-1: #FFFFFF;
+    --color-2: #000000;
+    --color-3: #761CBC;
+    --color-4: #6b6868;
+    --color-5: #EC441E;
+    --color-fond-1: #EDE9FF;
+    --color-fond-2: #FFF5D7;
+    --color-fond-3: #FFECEC;
+    --color-fond-4: #E4FFEA;
+
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(../storade/Page_Home/font/Inter_18pt-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../storade/Page_Home/font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+    font-family: "Quicksand-Regular";
+    src: url(../storade/Page_Home/font/Quicksand-Regular.ttf);
+}
