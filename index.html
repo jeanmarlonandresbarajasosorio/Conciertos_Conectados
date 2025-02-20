@@ -1,167 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Home</title>
-    <link rel="stylesheet" href="conciertosconectados/home.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header>
-
-        <!-- OPTIONS -->
-        <section class="options_header">
-
-            <article class="option_menu">
-                    <img src="storade/img/menu.svg">
-            </article>
-            <div class="option_notificacion">
-                <a href="#">
-                    <img src="storade/img/notification.svg">
-                </a>
-            </div>
-               
-            
-
-        </section>
-
-        <!-- TITLE -->
-        <section class="container_title">
-
-            <article class="title">
-                <h1>Find</h1>
-                <h1>Trending Events</h1>
-            </article>
-
-        </section>
-
-        <!-- SEARCH -->
-        <article class="serch_container">
-
-            <button type="submit"><img src="storade/img/search.svg" alt=""></button>
-            <input type="text" name="query" placeholder="Search event.." required>
-            <button type="submit"><img src="storade/img/filter.svg" alt=""></button>
-        
+    <header class="header">
+        <article class="header_img">
+            <div class="img1"><img src="storade/img/Menu.png"></div>
+            <div class="img2"><img src="storade/img/campana.png"></div>
         </article>
-
-        <!-- CATEGORIAS-RECOMENDACIONES -->
-        <nav>
-
-            <section class="recomend_search">
-                    <a href="#"><p>Music Concert</p></a>
-                    <a href="#"><p>Exhibition</p></a>
-                    <a href="#"><p>Stand Up Show</p></a>
-                    <a href="#"><p>Theater</p></a>
-            </section>
-
-        </nav>
+        <article class="header_title">
+            <h1>Find <br><span class="special">Trending Events</span> </h1>
+        </article>
     </header>
-    <main>
-
-        <!-- EVENTOS EN TENDENCIA -->
-        <section class="eventstendencias_container">
-
-            <article class="title_tendencias">
+        <nav class="container_nav">
+            <div class="container_search">
+                <div class="search">
+                    <img src="storade/img/Search.png">
+                    <input type="search" id="search" placeholder="Search event..." onkeypress="if(event.key === 'Enter') buscar()">
+                </div>
+                <img src="storade/img/filtro.png">
+            </div>
+            <div class="container_scroll1">
+               <a href="">Music Concert</a>
+               <a href="">Exhibition</a>
+               <a href="">Stand Up Show</a>
+               <a href="">Theater</a>
+               <div class="spacer"></div>
+            </div>
+        </nav>
+    <main class="container_main">
+        <article class="container_group1">
+            <div class="title">
                 <h2>Trending Events</h2>
-                <a href="#"><p>See all</p></a>
-            </article>
-
-            <article class="eventos_container">
-                <a href="details.html">
-                    <article class="container_img1">
-                        <img src="storade/img/imgents(1).png">
-                        <div class="container_list">
-                            <div class="list1">
-                                <h3>Coldplay : Music of the Spheres</h3>
-                                <div class="info1">
-                                    <img src="storade/img/locationwhite.svg">
-                                    <p>Jakarta, Indonesia</p>
-                                </div>
-                                <div class="info2">
-                                    <img src="storade/img/calendarwhite.svg">
-                                    <p>July 23 2023</p>
-                                </div>
-                            </div>
-                            <div class="list2">
-                                <h4>Start from</h4>
-                                <p>IDR1.100.000</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="container_img1">
-                        <img src="storade/img/imgents(2).svg">
-                        <div class="container_list">
-                            <div class="list1">
-                                <h3>Coldplay : Music of the Spheres</h3>
-                                <div class="info1">
-                                    <img src="storade/img/locationwhite.svg">
-                                    <p>Jakarta, Indonesia</p>
-                                </div>
-                                <div class="info2">
-                                    <img src="storade/img/calendarwhite.svg">
-                                    <p>July 23 2023</p>
-                                </div>
-                            </div>
-                            <div class="list2">
-                                <h4>Start from</h4>
-                                <p>IDR1.100.000</p>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-            </article>
-
-        </section>
-
-        <section class="eventscerca_container">
-            <article class="title_eventscerca">
-                <h2>Events Near You</h2>
-                <a href="#"><p>See all</p></a> 
-            </article>
-
-            <article class="container_eventos">
-                <article class="container_img2">
-                    <img src="storade/img/img2.svg">
-                    <div class="container_info">
-                        <h4>Muse : Will of the People</h4>
-                        <div class="lista1">
-                            <img src="storade/img/locationgray.svg">
-                            <p>Jakarta, Indonesia</p>
-                        </div>
-                        <div class="lista2">
-                            <img src="storade/img/calendergray.svg"><p>July 23 2023</p>
-                        </div>
-                        <div class="lista3">
-                            <img src="storade/img/salered.svg">
-                            <h3>IDR500.000</h3>
-                        </div>
+            </div>
+            <div class="paragraph">
+                <p>See all</p>
+            </div>
+            
+        </article>
+    <div class="container_scroll2">
+        <a href="detail.html"><article class="container_img">
+            <img src="storade/img/img-1.png">
+            <div class="container_list">
+                <div class="list1">
+                    <h3>Coldplay : Music of the Spheres</h3>
+                    <div class="info1">
+                        <img src="storade/img/img-10Location.svg">
+                        <p>Gelora Bung Karno Stadium..</p>
                     </div>
-                </article>
-                <article class="container_img2">
-                    <img src="storade/img/img3.svg">
-                    <div class="container_info">
-                        <h4>Muse : Will of the People</h4>
-                        <div class="lista1">
-                            <img src="storade/img/locationgray.svg">
-                            <p>Jakarta, Indonesia</p>
-                        </div>
-                        <div class="lista2">
-                            <img src="storade/img/calendergray.svg"><p>July 23 2023</p>
-                        </div>
-                        <div class="lista3">
-                            <img src="storade/img/salered.svg">
-                            <h3>IDR500.000</h3>
-                        </div>
+                    <div class="info2">
+                        <img src="storade/img/img-11Calender.svg">
+                        <p>November 15 2023</p>
                     </div>
-                </article>
-            </article>
-
-        </section>
+                </div>
+                <div class="list2">
+                    <h4>Start from</h4>
+                    <p>IDR1.100.000</p>
+                </div>
+            </div>
+        </article></a>
+        <article class="container_img">
+            <img src="storade/img/img-2.png">
+            <div class="container_list">
+                <div class="list1">
+                    <h3>Muse : Will of the People</h3>
+                    <div class="info1">
+                        <img src="storade/img/img-10Location.svg">
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                    <div class="info2">
+                        <img src="storade/img/img-11Calender.svg">
+                        <p>July 23 2023</p>
+                    </div>
+                </div>
+                <div class="list2">
+                    <h4>Start from</h4>
+                    <p>IDR500.000</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <article class="container_group2">
+        <div class="title">
+            <h2>Events Near You</h2>
+        </div>
+        <div class="paragraph">
+            <p>See all</p>
+    </article>
+    <article class="container_cards">
+        <div class="cards">
+            <div class="card1">
+                <img class="img-bigger" src="storade/img/img-17Cards-1.png">
+                <h3>Muse : Will of the People</h3>
+                <div class="text1">
+                    <img src="storade/img/img-19Location-gris.svg">
+                    <p>Jakarta, Indonesia</p>
+                </div>
+                <div class="text2">
+                    <img src="storade/img/img-21Calender-gris.svg">
+                    <p>July 23 2023</p>
+                </div>
+                <div class="text3">
+                    <img src="storade/img/img-18etiqueta.svg">
+                    <p>IDR500.000</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img class="img-bigger" src="storade/img/img-3Cards-2.png">
+                <h3>One Direction : Where We Are</h3>
+                <div class="text1">
+                    <img src="storade/img/img-19Location-gris.svg">
+                    <p>Jakarta, Indonesia</p>
+                </div>
+                <div class="text2">
+                    <img src="storade/img/img-21Calender-gris.svg">
+                    <p>Oct 29 2023</p>
+                </div>
+                <div class="text3">
+                    <img src="storade/img/img-18etiqueta.svg">
+                    <p>IDR800.000</p>
+                </div>
+            </div>
+        </div>
+        
+    </article>
     </main>
 </body>
-
 </html>
